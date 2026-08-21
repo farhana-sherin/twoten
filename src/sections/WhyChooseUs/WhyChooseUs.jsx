@@ -86,8 +86,8 @@ const WhyChooseUs = () => {
                             <img
                                 src={aboutImage}
                                 alt="TWOTEN MEDIA creative team working on digital marketing and media production"
-                                width="500"
-                                height="500"
+                                width="420"
+                                height="420"
                                 loading="lazy"
                                 decoding="async"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"
