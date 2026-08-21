@@ -177,10 +177,10 @@ const Footer = () => {
 
                 {/* Bottom bar */}
                 <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-                    <p className="text-xs text-gray-500 font-['Plus_Jakarta_Sans']">
+                    <p className="text-xs text-gray-400 font-['Plus_Jakarta_Sans']">
                         © {year} Twoten Media. All rights reserved.
                     </p>
-                    <p className="text-xs text-gray-600 font-['Plus_Jakarta_Sans']">
+                    <p className="text-xs text-gray-400 font-['Plus_Jakarta_Sans']">
                         Kerala Chapter of Snapads Media &amp; Advertising LLC
                     </p>
                 </div>

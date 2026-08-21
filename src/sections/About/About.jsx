@@ -24,8 +24,8 @@ const About = () => {
                         <img
                             src={aboutImage}
                             alt="TWOTEN MEDIA creative agency team working on digital marketing and content production"
-                            width="800"
-                            height="800"
+                            width="500"
+                            height="500"
                             loading="lazy"
                             decoding="async"
                             className="w-full h-full object-cover opacity-95 group-hover:scale-105 transition-all duration-700 ease-out"

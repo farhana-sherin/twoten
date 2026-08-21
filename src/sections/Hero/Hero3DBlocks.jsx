@@ -27,8 +27,8 @@ const Hero3DBlocks = () => {
                     fetchPriority="high"
                     loading="eager"
                     decoding="async"
-                    width="600"
-                    height="600"
+                    width="500"
+                    height="500"
                     initial={{ opacity: 1, scale: 0.85 }}
                     animate={{ opacity: 1, scale: 0.85, y: [0, -8, 0] }}
                     transition={{
@@ -44,8 +44,8 @@ const Hero3DBlocks = () => {
                     fetchPriority="high"
                     loading="eager"
                     decoding="async"
-                    width="650"
-                    height="433"
+                    width="550"
+                    height="367"
                     initial={{ opacity: 1, scale: 1.4 }}
                     animate={{
                         opacity: 1,
