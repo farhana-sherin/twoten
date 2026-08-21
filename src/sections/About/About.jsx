@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import aboutImage from '../../assets/images/hero/about.png';
+import aboutImage from '../../assets/images/hero/about.webp';
 
 const About = () => {
     return (
@@ -24,6 +24,8 @@ const About = () => {
                         <img
                             src={aboutImage}
                             alt="TWOTEN MEDIA creative agency team working on digital marketing and content production"
+                            width="800"
+                            height="800"
                             loading="lazy"
                             decoding="async"
                             className="w-full h-full object-cover opacity-95 group-hover:scale-105 transition-all duration-700 ease-out"

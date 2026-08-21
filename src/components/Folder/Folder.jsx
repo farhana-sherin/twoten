@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import './Folder.css';
 
 const darkenColor = (hex, percent) => {
@@ -28,6 +28,7 @@ const Folder = ({ color = '#5227FF', size = 1, items = [], className = '' }) => 
 
     const [open, setOpen] = useState(false);
     const [paperOffsets, setPaperOffsets] = useState(Array.from({ length: maxItems }, () => ({ x: 0, y: 0 })));
+    const rafRef = useRef(null);
 
     const folderBackColor = darkenColor(color, 0.08);
     const paper1 = darkenColor('#ffffff', 0.1);
@@ -48,10 +49,13 @@ const Folder = ({ color = '#5227FF', size = 1, items = [], className = '' }) => 
         const centerY = rect.top + rect.height / 2;
         const offsetX = (e.clientX - centerX) * 0.15;
         const offsetY = (e.clientY - centerY) * 0.15;
-        setPaperOffsets(prev => {
-            const newOffsets = [...prev];
-            newOffsets[index] = { x: offsetX, y: offsetY };
-            return newOffsets;
+        if (rafRef.current) cancelAnimationFrame(rafRef.current);
+        rafRef.current = requestAnimationFrame(() => {
+            setPaperOffsets(prev => {
+                const newOffsets = [...prev];
+                newOffsets[index] = { x: offsetX, y: offsetY };
+                return newOffsets;
+            });
         });
     };
 

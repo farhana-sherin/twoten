@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react';
-import Logo from '../../assets/images/hero/TWOTEN_LOGO.png';
+import Logo from '../../assets/images/hero/TWOTEN_LOGO.webp';
 
 const navLinks = [
     { label: 'Home', href: '#home' },
@@ -75,6 +75,8 @@ const Footer = () => {
                             <img
                                 src={Logo}
                                 alt="Twoten Media"
+                                width="160"
+                                height="32"
                                 className="h-8 w-auto object-contain brightness-200"
                             />
                         </a>

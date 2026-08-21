@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import the two hero assets uploaded by the user
-import CenterBlockImage from '../../assets/images/hero/center-block.png';
-import ElementsImage from '../../assets/images/hero/elemts.png';
+import CenterBlockImage from '../../assets/images/hero/center-block.webp';
+import ElementsImage from '../../assets/images/hero/elemts.webp';
 
 const Hero3DBlocks = () => {
     return (
@@ -24,11 +24,14 @@ const Hero3DBlocks = () => {
 
                 {/* Layer 1: Main Focal Point - Central Digital Marketing Cube & Podium (Shifted right) */}
                 <motion.img
-                    initial={{ opacity: 0, y: 20, scale: 1 }}
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    width="1000"
+                    height="666"
+                    initial={{ opacity: 1, scale: 0.85 }}
                     animate={{ opacity: 1, scale: 0.85, y: [0, -8, 0] }}
                     transition={{
-                        opacity: { duration: 0.8 },
-                        scale: { duration: 0.8 },
                         y: { repeat: Infinity, duration: 6, ease: 'easeInOut' }
                     }}
                     src={CenterBlockImage}
@@ -38,7 +41,12 @@ const Hero3DBlocks = () => {
 
                 {/* Layer 2: Satellite Service Tiles & Orbital Ring */}
                 <motion.img
-                    initial={{ opacity: 0, y: 20, scale: 1 }}
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
+                    width="1000"
+                    height="666"
+                    initial={{ opacity: 1, scale: 1.4 }}
                     animate={{
                         opacity: 1,
                         rotate: [-3, 3, -3],
@@ -46,7 +54,6 @@ const Hero3DBlocks = () => {
                         scale: [1.38, 1.46, 1.42]
                     }}
                     transition={{
-                        opacity: { duration: 0.9, delay: 0.15 },
                         rotate: { repeat: Infinity, duration: 8, ease: 'easeInOut' },
                         y: { repeat: Infinity, duration: 5.4, ease: 'easeInOut' },
                         scale: { repeat: Infinity, duration: 5.4, ease: 'easeInOut' }

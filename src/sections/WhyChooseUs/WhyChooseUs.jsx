@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import aboutImage from '../../assets/images/hero/why_choose_us.png';
+import aboutImage from '../../assets/images/hero/why_choose_us.webp';
 import {
     Sparkles,
     Film,
@@ -86,6 +86,8 @@ const WhyChooseUs = () => {
                             <img
                                 src={aboutImage}
                                 alt="TWOTEN MEDIA creative team working on digital marketing and media production"
+                                width="800"
+                                height="800"
                                 loading="lazy"
                                 decoding="async"
                                 className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-out"

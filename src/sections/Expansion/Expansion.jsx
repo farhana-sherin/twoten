@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import clientImage from '../../assets/images/clients/client.png';
-import mapImage from '../../assets/images/clients/map.png';
+import clientImage from '../../assets/images/clients/client.webp';
+import mapImage from '../../assets/images/clients/map.webp';
 
 const Expansion = () => {
     return (
@@ -12,6 +12,10 @@ const Expansion = () => {
                 <img
                     src={clientImage}
                     alt="Abu Dhabi Building Skyline"
+                    width="800"
+                    height="769"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-left grayscale contrast-130 brightness-110 opacity-90 lg:opacity-100"
                 />
                 {/* Smooth Gradient Fade into Dark Background on the right */}
@@ -121,6 +125,10 @@ const Expansion = () => {
                             <img
                                 src={mapImage}
                                 alt="World Map Background"
+                                width="700"
+                                height="742"
+                                loading="lazy"
+                                decoding="async"
                                 className="absolute inset-0 w-full h-full object-contain opacity-70 mix-blend-lighten pointer-events-none"
                             />
 
