@@ -27,14 +27,14 @@ const Hero3DBlocks = () => {
                     fetchPriority="high"
                     loading="eager"
                     decoding="async"
-                    width="1000"
-                    height="666"
+                    width="600"
+                    height="600"
                     initial={{ opacity: 1, scale: 0.85 }}
                     animate={{ opacity: 1, scale: 0.85, y: [0, -8, 0] }}
                     transition={{
                         y: { repeat: Infinity, duration: 6, ease: 'easeInOut' }
                     }}
-                    src={CenterBlockImage}
+                    src="/images/hero/center-block.webp"
                     alt="Central Digital Marketing Cube"
                     className="absolute inset-0 w-[80%] h-full object-contain z-10 translate-x-4 sm:translate-x-6 md:translate-x-15 top-[-7%] drop-shadow-[0_30px_60px_rgba(0,0,0,0.95)]"
                 />
@@ -44,8 +44,8 @@ const Hero3DBlocks = () => {
                     fetchPriority="high"
                     loading="eager"
                     decoding="async"
-                    width="1000"
-                    height="666"
+                    width="650"
+                    height="433"
                     initial={{ opacity: 1, scale: 1.4 }}
                     animate={{
                         opacity: 1,
@@ -58,7 +58,7 @@ const Hero3DBlocks = () => {
                         y: { repeat: Infinity, duration: 5.4, ease: 'easeInOut' },
                         scale: { repeat: Infinity, duration: 5.4, ease: 'easeInOut' }
                     }}
-                    src={ElementsImage}
+                    src="/images/hero/elemts.webp"
                     alt="Digital Marketing Satellite Elements & Orbital Ring"
                     className="absolute inset-0 w-full h-full object-contain z-20 drop-shadow-[0_20px_45px_rgba(0,0,0,0.85)] origin-center"
                 />

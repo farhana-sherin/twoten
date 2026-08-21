@@ -11,12 +11,14 @@ import GetInTouch from './components/GetInTouch/GetInTouch';
 const App = () => {
   return (
     <div className="w-full bg-[#050507] min-h-screen text-white overflow-x-hidden">
-      <Hero />
-      <About />
-      <Expertise />
-      <WhyChooseUs />
-      <Process />
-      <Expansion />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Expertise />
+        <WhyChooseUs />
+        <Process />
+        <Expansion />
+      </main>
       <Footer />
       <GetInTouch />
     </div>

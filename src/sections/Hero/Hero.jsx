@@ -66,7 +66,7 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 12 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.35 }}
-                        className="text-gray-400 text-sm md:text-[15px] leading-relaxed mb-8 max-w-lg font-normal font-['Plus_Jakarta_Sans']"
+                        className="text-gray-300 text-sm md:text-[15px] leading-relaxed mb-8 max-w-lg font-normal font-['Plus_Jakarta_Sans']"
                     >
                         We combine strategy, creativity and data to help brands
                         grow through digital marketing, social media, branding
