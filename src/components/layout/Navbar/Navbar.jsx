@@ -1,14 +1,13 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
-import Logo from '../../../assets/images/hero/TWOTEN_LOGO.png';
 
 const Navbar = () => {
     return (
-        <nav className="w-full flex items-center justify-between px-6 md:px-16 py-6 absolute top-0 left-0 right-0 z-50 max-w-[1400px] mx-auto">
-            {/* Brand Logo & Name */}
+        <nav className="w-full flex items-center justify-between px-6 md:px-12 lg:px-16 py-6 absolute top-0 left-0 right-0 z-50 max-w-[1480px] mx-auto">
             <div className="flex items-center gap-3">
-                <img src={Logo} alt="Twoten Logo" className="h-7 w-auto object-contain brightness-200" />
-
+                <span className="text-white text-sm font-bold uppercase tracking-[0.24em]">
+                   Vantora
+                </span>
             </div>
 
             {/* Navigation Links */}
