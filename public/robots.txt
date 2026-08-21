@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://twotenmedia.com/sitemap.xml
+Sitemap: https://twoten.vercel.app/sitemap.xml
